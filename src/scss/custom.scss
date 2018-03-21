@@ -1,5 +1,8 @@
+$pricolor:#F7CA19;
+$secolor:#313131; 
+
 .left_col {
-  background: #2A3F54;
+  background:$secolor;
 }
 .nav-sm .container.body .col-md-3.left_col {
   min-height: 100%;
@@ -177,8 +180,8 @@
 }
 .nav_menu {
   float: left;
-  background: #EDEDED;
-  border-bottom: 1px solid #D9DEE4;
+  background: $pricolor;
+  border-bottom: 1px solid #D9DEE5;
   margin-bottom: 10px;
   width: 100%;
   position: relative;
@@ -210,7 +213,7 @@ body .container.body .right_col {
 .nav_title {
   width: 230px;
   float: left;
-  background: #2A3F54;
+  background: $secolor;
   border-radius: 0;
   height: 57px;
 }
@@ -335,8 +338,8 @@ body .container.body .right_col {
   background: #D9DEE4;
 }
 body {
-  color: #73879C;
-  background: #2A3F54;
+  color: #313131;
+  background: $pricolor;
   font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
   font-size: 13px;
   font-weight: 400;
