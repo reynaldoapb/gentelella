@@ -1,4 +1,13 @@
 @charset "UTF-8";
+span.marca, span.preco {
+  display: block; }
+
+.preco {
+  font-size: 2em; }
+
+.red-text {
+  color: #F44336 !important; }
+
 .left_col {
   background: #313131; }
 
