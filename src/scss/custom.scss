@@ -4357,3 +4357,17 @@ ul.notifications {
   border: 1px solid #e5e5e5;
 }
 /** /Dropzone.js **/
+
+// Color
+@import "materialize";
+
+
+
+//ajustes no css core//
+
+@media only screen and (min-width: 993px){
+.container {
+    width: 100% !important;
+}
+}
+
