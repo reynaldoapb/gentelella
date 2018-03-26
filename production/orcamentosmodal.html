@@ -41,7 +41,7 @@
       <div class="main_container">
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
-            <div class="navbar nav_title" style="border: 0;">
+            <div class="navbar nav_title " style="border: 0;">
               <a href="index.html"  class="site_title"><img width="42" src="https://s3.amazonaws.com/armpb-mcom-prod/logo/vendaweb.png"> <span>Venda Web</span></a>
             </div>
 
@@ -98,11 +98,13 @@
 
         <!-- top navigation -->
         <div class="top_nav">
-          <div class="nav_menu">
-            <nav>
+          <div class="nav_menu ">
+            <nav class="yellow darken-1">
               <div class="nav toggle">
                 <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                
               </div>
+             
 
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
@@ -111,7 +113,7 @@
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a href="javascript:;"> Profile</a></li>
+                    <li><a href="javascript:;"> Perfil</a></li>
                     <li>
                       <a href="javascript:;">
                         <span class="badge bg-red pull-right">50%</span>
@@ -119,7 +121,7 @@
                       </a>
                     </li>
                     <li><a href="javascript:;">Help</a></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i>Sair</a></li>
                   </ul>
                 </li>
 
@@ -133,11 +135,11 @@
                       <a>
                         <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                         <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
+                          <span>Thiago Charle</span>
+                          <span class="time">3 mins atrás</span>
                         </span>
                         <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                          Foco na venda de Móveis. Faça o rodízio com seus colegas e ocupem este espaço na loja.
                         </span>
                       </a>
                     </li>
@@ -196,25 +198,14 @@
         <!-- page content -->
         <div class="right_col" role="main">
           <div class="">
-            <div class="page-title">
-              <div class="title_left">
-                <h3>General Elements</h3>
-              </div>
-
-              <div class="title_right">
-                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="O que você procura?">
-                    <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">buscar</button>
-                    </span>
-                  </div>
+            
+            
+            <div class="input-field col-md-8">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
                 </div>
-              </div>
-            </div>
 
-<!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
 
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
@@ -349,6 +340,18 @@
                     </div>
                   </div>
                   <!-- /modals -->
+                  
+                                    <div class="fixed-action-btn">
+                    <a class="btn-floating btn-large red">
+                      <i class="large material-icons">mode_edit</i>
+                    </a>
+                    <ul>
+                      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -392,7 +395,13 @@
     <!--Materialize-->
     <script src="../vendors/materialize-css/dist/js/materialize.min.js"></script>
 
-    
+    <script type="text/javascript">
+      // Or with jQuery
+
+      $(document).ready(function(){
+        $('.fixed-action-btn').floatingActionButton();
+      });
+    </script>
     
 
     <!-- Custom Theme Scripts -->
